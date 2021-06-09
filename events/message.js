@@ -19,7 +19,3 @@ cmd.run(client, message, params, perms);
            }
 
 };
-
-module.exports.config = {
-  name:'message'
-};
