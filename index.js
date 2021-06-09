@@ -1,6 +1,6 @@
 const { MessageEmbed, Client, Collection } = require("discord.js");
 const fs = require('fs')
-const client = (global.client = new Client({ fetchAllMembers: true }));
+const client = new Client({ fetchAllMembers: true });
 const config = require('./config.js');
 const { JsonDatabase } = require('wio.db');
 require('./util/eventLoader.js')(client);
