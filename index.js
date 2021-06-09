@@ -24,8 +24,7 @@ fs.readdir('./events/', (err, files) => {
   if (err) console.error(err);
   console.log(`${files.length} event yüklenecek.`);
   files.forEach(dosya => {
-      let props = require(`./events/${dosya}`);
-      console.log(`${props.config.name} eventi yüklendi.`);
+      console.log(`${dosya} eventi yüklendi.`);
   });
 });
 
